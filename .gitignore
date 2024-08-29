@@ -1,0 +1,4 @@
+db/files_info.db
+.idea/
+__pycache__/
+Resources/conf.json

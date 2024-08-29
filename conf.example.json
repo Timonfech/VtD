@@ -1,0 +1,231 @@
+{
+  "excluded_provider": "",
+  "queue_limits": {
+    "max_vt_info_lists": 500,
+    "max_pending_files": 20000
+  },
+  "buffer_conf": {
+    "buffer_destination": "D:\\Buffer_Zone",
+    "crone_job_time": "0 12 * * *",
+    "fp_score_and_less": 2.6,
+    "malware_score_and_less": 2.6
+  },
+  "scanners": {
+    "Scanner_1": {
+      "os_": "Win",
+      "start_reference": "\\ScannerCmd\\scan.exe",
+      "update_param": "/u"
+    },
+    "Scanner_2": {
+      "os_": "Win",
+      "start_reference": "\\ScannerCmd\\scan.exe",
+      "update_param": "/u"
+    }
+  },
+  "filtration_conf": {
+    "vt_filter_conf": {
+      "threats": {
+        "Virus": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Viru?s?"
+          ]
+        },
+        "Trojan": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Trojan"
+          ]
+        },
+        "Backdoor": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Backdoor"
+          ]
+        },
+        "Dropper": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Dropper"
+          ]
+        },
+        "Downloader": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Downloader"
+          ]
+        },
+        "Tool": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Tool"
+          ]
+        },
+        "Adware": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Adware"
+          ]
+        },
+        "Dialer": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Dialer"
+          ]
+        },
+        "Worm": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Worm"
+          ]
+        },
+        "Exploit": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Exploit"
+          ]
+        },
+        "Rootkit": {
+          "significance_score": 0.1,
+          "patterns": [
+            "Rootkit"
+          ]
+        }
+      }
+    },
+    "extensions": {
+      "Bundles": [
+        "compressed",
+        "zip",
+        "gzip",
+        "bzip",
+        "rzip",
+        "dzip",
+        "7zip",
+        "applescript",
+        "scpt",
+        "maclib"
+      ],
+      "images": [
+        "image",
+        "jpeg",
+        "jpg",
+        "draw",
+        "emf",
+        "tiff",
+        "gif",
+        "png",
+        "bmp",
+        "gimp",
+        "indesign",
+        "photoshop",
+        "psd",
+        "targa",
+        "xws",
+        "dib",
+        "jng",
+        "ico",
+        "fpx",
+        "eps",
+        "svg",
+        "webp",
+        "xwd"
+      ],
+      "video&audio": [
+        "audio",
+        "animation",
+        "ogg",
+        "flc",
+        "fli",
+        "mp3",
+        "flac",
+        "wav",
+        "midi",
+        "avi",
+        "mpeg",
+        "quicktime",
+        "qt",
+        "asf",
+        "divx",
+        "flv",
+        "wma",
+        "wmv",
+        "realmedia",
+        "rm",
+        "mov",
+        "mp4",
+        "3gp",
+        "video",
+        "mkv",
+        "webm"
+      ],
+      "apple": [
+        "apple",
+        "apple-gen",
+        "macintosh",
+        "macintosh-gen",
+        "mac",
+        "applesingle",
+        "appledouble",
+        "machfs",
+        "appleplist",
+        "applescript",
+        "scpt",
+        "maclib"
+      ]
+    }
+  },
+  "av_trust_conf": {
+    "Vendor_1": {
+      "trust_score": 0.3,
+      "detection_trust_list": []
+    },
+    "Vendor_2": {
+      "trust_score": 0.2,
+      "detection_trust_list": []
+    },
+    "Vendor_3": {
+      "trust_score": 0.2,
+      "detection_trust_list": []
+    },
+    "Vendor_4": {
+      "trust_score": 0.7,
+      "detection_trust_list": []
+    },
+    "Vendor_5": {
+      "trust_score": 0.5,
+      "detection_trust_list": []
+    },
+    "Vendor_6": {
+      "trust_score": 0.7,
+      "detection_trust_list": []
+    },
+    "Vendor_7": {
+      "trust_score": 0.6,
+      "detection_trust_list": []
+    },
+    "Vendor_8": {
+      "trust_score": 0.5,
+      "detection_trust_list": []
+    },
+    "Vendor_9": {
+      "trust_score": 0.4,
+      "detection_trust_list": []
+    },
+    "Vendor_10": {
+      "trust_score": 0.6,
+      "detection_trust_list": []
+    },
+    "default_trust": 0.05,
+    "score_threshold": 2.84,
+    "weighted_scoring": {
+      "threshold": 0.5,
+      "weights": {
+        "trusted": 0.5,
+        "vt_ratio": 0.25,
+        "severity": 0.15,
+        "trend": 0.1
+      }
+    }
+  }
+}
